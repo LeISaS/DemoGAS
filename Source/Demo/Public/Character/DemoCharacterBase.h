@@ -61,9 +61,9 @@ protected:
 	TWeakObjectPtr<class UCharacterAbilitySystemComponent> AbilitySystemComponent;
 	TWeakObjectPtr<class UCharacterAttributeSetBase> AttributeSetBase;
 
-	//규칙 만들어 상태제어
+	//규칙 만들???�태?�어
 	FGameplayTag DeadTag;
-	FGameplayTag EffectRemoveOnDeathTag;	// 죽은뒤 효과
+	FGameplayTag EffectRemoveOnDeathTag;	// 죽�????�과
 
 	UPROPERTY(BlueprintReadOnly,EditAnywhere,Category = "Demo|Character")
 	FText CharacterName;

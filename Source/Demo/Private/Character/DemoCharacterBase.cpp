@@ -2,7 +2,6 @@
 
 
 #include "Character/DemoCharacterBase.h"
-
 #include "Character/Abilities/CharacterAbilitySystemComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Character/Abilities/CharacterAbilitySystemComponent.h"

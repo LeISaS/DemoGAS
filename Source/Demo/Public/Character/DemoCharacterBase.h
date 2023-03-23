@@ -61,9 +61,9 @@ protected:
 	TWeakObjectPtr<class UCharacterAbilitySystemComponent> AbilitySystemComponent;
 	TWeakObjectPtr<class UCharacterAttributeSetBase> AttributeSetBase;
 
-	//규칙 만들???�태?�어
+	//규칙 만들???�태?�어
 	FGameplayTag DeadTag;
-	FGameplayTag EffectRemoveOnDeathTag;	// 죽�????�과
+	FGameplayTag EffectRemoveOnDeathTag;	// 죽�????�과
 
 	UPROPERTY(BlueprintReadOnly,EditAnywhere,Category = "Demo|Character")
 	FText CharacterName;
@@ -72,7 +72,7 @@ protected:
 	UAnimMontage* DeathMontage;
 
 	
-	UPROPERTY(BlueprintReadWrite,EditAnywhere,Category = "Demo|Character")
+	UPROPERTY(BlueprintReadWrite,EditAnywhere,Category = "Demo|Abilities")
 	TArray<TSubclassOf<class UCharacterGameplayAbility>> CharacterAbilities;
 	
 	UPROPERTY(BlueprintReadOnly,EditAnywhere,Category = "Demo|Abilities")

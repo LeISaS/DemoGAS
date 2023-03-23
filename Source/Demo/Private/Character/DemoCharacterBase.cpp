@@ -40,9 +40,10 @@ void ADemoCharacterBase::AddCharacterAbilities()
 		return;
 	}
 
-	for (TSubclassOf<UCharacterGameplayAbility> & StartupAbility : CharacterAbilities)
+	for (TSubclassOf<UCharacterGameplayAbility>& StartupAbility : CharacterAbilities)
 	{
-		AbilitySystemComponent->GiveAbility(FGameplayAbilitySpec(StartupAbility,GetAbilityLevel(StartupAbility.GetDefaultObject()->AbilityID),static_cast<int32>(StartupAbility.GetDefaultObject()->AbilityInputID),this));
+		AbilitySystemComponent->GiveAbility(FGameplayAbilitySpec(StartupAbility,GetAbilityLevel(StartupAbility.GetDefaultObject()->AbilityID),
+			static_cast<int32>(StartupAbility.GetDefaultObject()->AbilityInputID),this));
 	}
 
 	AbilitySystemComponent->CharacterAbilitiesGiven = true;
@@ -132,7 +133,7 @@ void ADemoCharacterBase::SetMana(float Mana)
 {
 	if(AttributeSetBase.IsValid())
 	{
-		AttributeSetBase->SetHealth(Mana);
+		AttributeSetBase->SetMana(Mana);
 	}
 }
 

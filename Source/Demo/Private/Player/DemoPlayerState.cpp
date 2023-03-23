@@ -31,7 +31,7 @@ UCharacterAttributeSetBase* ADemoPlayerState::GetAttributeSetBase() const
 
 bool ADemoPlayerState::IsAlive() const
 {
-	return false;
+	return GetHealth()>0.0f;
 }
 
 void ADemoPlayerState::ShowAbilityConfirmCancelText(bool ShowText)
